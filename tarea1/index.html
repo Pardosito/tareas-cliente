@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Ian Rodríguez, Estudiante en Ingeniería de Desarrollo de Software.">
+    <title>CV - Ian Rodríguez</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="header">
+        <div class="container">
+            <h1>Ian Rodríguez</h1>
+            <p class="subtitle">Estudiante en Ing. Desarrollo de Software</p>
+            <nav aria-label="Navegación">
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">Acerca de mí</h2>
+                <div class="profile-content">
+                    <p>
+                        Estudiante de Ingeniería de Software en ITESO (Zapopan, Jalisco) enfocado en Desarrollo Web, con un gran interés en <strong>Arquitectura Backend y diseño de APIs</strong>.
+                        Me dedico a construir sistemas escalables aplicando patrones de diseño y fomentando un ambiente de equipo positivo.
+                    </p>
+                    <p>📍 Zapopan, Jalisco </p>
+                    <p>🔗 <a href="https://github.com/Pardosito" target="_blank">GitHub: Pardosito</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Proyectos Destacados</h2>
+                <div class="projects-grid">
+
+                    <article class="project-card" aria-labelledby="proj-1-title">
+                        <h3>Synapse Call</h3>
+                        <span class="badge">Full Stack</span>
+                        <p>Plataforma de videoconferencia de baja latencia usando WebRTC y WebSockets para sincronización en tiempo real.</p>
+                        <ul>
+                            <li>API RESTful escalable documentada con Swagger/OpenAPI.</li>
+                            <li>Autenticación de usuarios y gestión de historial de sesiones.</li>
+                        </ul>
+                        <a href="https://github.com/EmmanuelPulidoTinajero/SynapseCall" class="btn-link" aria-label="Ver repositorio de Synapse Call">Ver Código</a>
+                    </article>
+
+                    <article class="project-card" aria-labelledby="proj-2-title">
+                        <h3>Movie Picker (Alexa Skill)</h3>
+                        <span class="badge">Python / AWS</span>
+                        <p>Motor de recomendación activado por voz utilizando AWS Lambda y DynamoDB.</p>
+                        <ul>
+                            <li>Integración con API TMDb para datos en tiempo real.</li>
+                            <li>Implementación de patrones de diseño: Strategy, Template Method y Singleton.</li>
+                        </ul>
+                        <a href="https://www.amazon.com.mx/dp/B0GMH5KT9Y/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=RHFMCV4UN2I3&dib=eyJ2IjoiMSJ9.MNwNoRydISNEFVIFPuzfeA.GLxki2vCPSTz41G-brQTtxyqNY3dXm8_Sja7eabyf6w&dib_tag=se&keywords=Escoge+Pelicula&qid=1770691600&s=digital-skills&sprefix=escoge+pelicu,alexa-skills,241&sr=1-2" class="btn-link" aria-label="Ver página de producto">Ver Skill</a>
+                    </article>
+
+                    <article class="project-card" aria-labelledby="proj-3-title">
+                        <h3>Dynamic Music Library</h3>
+                        <span class="badge">Java Backend</span>
+                        <p>Motor de audio adaptativo capaz de superponer pistas sincronizadas a estados de la aplicación en tiempo real.</p>
+                        <a href="https://github.com/Pardosito/dynamic_music_library" class="btn-link" aria-label="Ver repositorio de Dynamic Music Library">Ver Código</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-light" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Tecnologías y Experiencia</h2>
+
+                <div class="skills-layout">
+                    <div class="tech-stack">
+                        <h3>Tecnologías</h3>
+                        <ul class="tag-list" aria-label="Lista de lenguajes y herramientas">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>TypeScript</li>
+                            <li>Node.js / Express.js</li>
+                            <li>NoSQL (MongoDB/Cassandra)</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience">
+                        <h3>Experiencia Profesional</h3>
+                        <article>
+                            <h4>Auxiliar de Diseño</h4>
+                            <p class="company">Identi Soluciones (Agosto 2023 - Presente)</p>
+                            <ul>
+                                <li>Desarrollo de plantillas de pruebas digitales para optimizar flujos de trabajo.</li>
+                                <li>Entrega de activos de alta calidad bajo presión y plazos estrictos.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="footer">
+        <div class="container">
+            <p>&copy; 2026 Ian Rodríguez.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
