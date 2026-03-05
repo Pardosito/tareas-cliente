@@ -1,0 +1,89 @@
+%btn-base {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  @extend %btn-base;
+  background-color: $primary;
+  color: $white;
+
+  &:hover, &:active { background-color: $primary-hover; }
+}
+
+.btn-link {
+  @extend %btn-base;
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+
+  &:hover, &:active { background-color: rgba($primary, 0.1); }
+}
+
+.project-card {
+  background: $white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+$badge-themes: (
+  "fullstack": #8b5cf6,
+  "backend": #10b981,
+  "python": #f59e0b
+);
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  background: #e0e7ff;
+  color: $primary;
+
+  @each $name, $color in $badge-themes {
+    &--#{$name} {
+      background-color: rgba($color, 0.1);
+      color: $color;
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+
+    &[aria-invalid="true"] {
+      border-color: $error;
+      background-color: #fef2f2;
+    }
+  }
+
+  .error-message {
+    color: $error;
+    font-size: 0.875rem;
+    display: none;
+    margin-top: 0.25rem;
+  }
+}
