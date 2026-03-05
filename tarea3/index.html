@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Ian Rodríguez, Estudiante en Ingeniería de Desarrollo de Software.">
+    <title>CV - Ian Rodríguez</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <div class="container header-content">
+            <div>
+                <h1>Ian Rodríguez</h1>
+                <p class="subtitle">Estudiante en Ing. Desarrollo de Software</p>
+            </div>
+            <nav aria-label="Navegación">
+                <ul>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">Acerca de mí</h2>
+                <div class="profile-content">
+                    <p>
+                        Estudiante de Ingeniería de Software en ITESO (Zapopan, Jalisco) enfocado en Desarrollo Web, con un gran interés en <strong>Arquitectura Backend y diseño de APIs</strong>.
+                        Me dedico a construir sistemas escalables aplicando patrones de diseño.
+                    </p>
+                    <p>📍 Zapopan, Jalisco</p>
+                    <p>🔗 <a href="https://github.com/Pardosito" target="_blank" rel="noopener">GitHub: Pardosito</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <article class="project-card" aria-labelledby="proj-1-title">
+                        <h3 id="proj-1-title">Synapse Call</h3>
+                        <span class="badge badge--fullstack">Full Stack</span>
+                        <p>Plataforma de videoconferencia de baja latencia usando WebRTC y WebSockets.</p>
+                        <a href="#" class="btn-link" aria-label="Ver repositorio de Synapse Call">Ver Código</a>
+                    </article>
+
+                    <article class="project-card" aria-labelledby="proj-2-title">
+                        <h3 id="proj-2-title">Movie Picker (Alexa Skill)</h3>
+                        <span class="badge badge--python">Python / AWS</span>
+                        <p>Motor de recomendación activado por voz utilizando AWS Lambda y DynamoDB.</p>
+                        <a href="#" class="btn-link" aria-label="Ver Skill de Movie Picker">Ver Skill</a>
+                    </article>
+
+                    <article class="project-card" aria-labelledby="proj-3-title">
+                        <h3 id="proj-3-title">Dynamic Music Library</h3>
+                        <span class="badge badge--backend">Java Backend</span>
+                        <p>Motor de audio adaptativo capaz de superponer pistas sincronizadas.</p>
+                        <a href="#" class="btn-link" aria-label="Ver repositorio de Dynamic Music Library">Ver Código</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Tecnologías y Experiencia</h2>
+                <div class="skills-layout">
+                    <div class="tech-stack">
+                        <h3>Tecnologías</h3>
+                        <ul aria-label="Lista de lenguajes y herramientas">
+                            <li>Java, Python, TypeScript</li>
+                            <li>Node.js / Express.js</li>
+                            <li>NoSQL (MongoDB/Cassandra)</li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <h3>Experiencia Profesional</h3>
+                        <article>
+                            <h4>QA Engineer Intern</h4>
+                            <p><strong>Toshiba Global Commerce Solutions</strong> (Marzo 2026 - Presente)</p>
+                            <ul>
+                                <li>Automatización de pruebas en el OS propietario de Toshiba para máquinas retail.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 Ian Rodríguez.</p>
+        </div>
+    </footer>
+</body>
+</html>

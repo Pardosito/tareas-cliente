@@ -1,0 +1,238 @@
+@charset "UTF-8";
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #334155;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+h4 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header[role=banner] {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+header[role=banner] .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  header[role=banner] .header-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+header[role=banner] h1 {
+  color: #ffffff;
+  margin: 0;
+}
+header[role=banner] .subtitle {
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+nav[aria-label=Navegación] {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  nav[aria-label=Navegación] {
+    margin-top: 0;
+  }
+}
+nav[aria-label=Navegación] ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+nav[aria-label=Navegación] a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav[aria-label=Navegación] a:hover, nav[aria-label=Navegación] a:focus {
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .skills-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+footer[role=contentinfo] {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-link, .btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:active {
+  background-color: #1d4ed8;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+.btn-link:hover, .btn-link:active {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  background: #e0e7ff;
+  color: #2563eb;
+}
+.badge--fullstack {
+  background-color: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+}
+.badge--backend {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+.badge--python {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+}
+.form-group input[aria-invalid=true], .form-group textarea[aria-invalid=true] {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
+.form-group .error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  display: none;
+  margin-top: 0.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */
