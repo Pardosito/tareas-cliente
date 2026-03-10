@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const api_response_1 = require("./services/api_response");
 const enum_1 = require("./utils/enum");
-// Modelo IUser
 const user = {
     id: 1,
     name: "Ana Torres",
@@ -10,7 +9,6 @@ const user = {
     role: enum_1.UserRole.Admin,
     isActive: true
 };
-// Modelo IProduct
 const product = {
     id: 101,
     name: "Teclado Mecanico",
@@ -18,7 +16,6 @@ const product = {
     stock: 25,
     createdAt: new Date("2026-03-09")
 };
-// Tipos utilitarios basados en modelos
 const publicUser = {
     id: user.id,
     name: user.name,
@@ -35,7 +32,6 @@ const productReview = {
 };
 const extractedFromArray = "oferta";
 const extractedFromNonArray = 2026;
-// Simulaciones de respuesta de API
 const userResponse = (0, api_response_1.createApiResponse)(user);
 const productResponse = (0, api_response_1.createApiResponse)(product);
 const usersResponse = (0, api_response_1.createApiResponse)([user]);
